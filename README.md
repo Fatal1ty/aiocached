@@ -66,7 +66,6 @@ def foobar(n):
     time.sleep(n)
     print(n)
 
-
 def main():
     foobar(1)
     time.sleep(2)
