@@ -11,7 +11,7 @@
 I wrote a simple helper to cache results in one service because I found it easy
 to do. As soon as I needed the helper in another project, I realized that it
 should be in a separate package published on PyPI. Having found `aiocache`
-project I was disappointed because it doesn't cache `None` values.
+project I was disappointed because it wasn't able to cache `None` values.
 So I had a reason to create `aiocached`.
 
 
@@ -64,7 +64,6 @@ from aiocached import cached
 @cached(ttl=2)
 def foobar(n):
     time.sleep(n)
-    print(n)
 
 def main():
     foobar(1)
