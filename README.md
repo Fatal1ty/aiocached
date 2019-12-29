@@ -3,8 +3,8 @@
 > **aioached** is a simple package with decorator `cached` to cache results of
 >ordinary and coroutine functions with configurable TTL and `None` value support
 
-[![Latest Version](https://img.shields.io/pypi/v/aiocached.svg)](https://pypi.python.org/pypi/mashumaro)
-[![Python Version](https://img.shields.io/pypi/pyversions/aiocached.svg)](https://pypi.python.org/pypi/mashumaro)
+[![Latest Version](https://img.shields.io/pypi/v/aiocached.svg)](https://pypi.python.org/pypi/aiocached)
+[![Python Version](https://img.shields.io/pypi/pyversions/aiocached.svg)](https://pypi.python.org/pypi/aiocached)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
