@@ -7,6 +7,8 @@ setup(
     name="aiocached",
     version="0.1",
     description="Simple decorator to cache coroutine function results",
+    long_description=open('README.md', encoding='utf8').read(),
+    long_description_content_type='text/markdown',
     platforms="all",
     classifiers=[
         "License :: OSI Approved :: Apache Software License",
