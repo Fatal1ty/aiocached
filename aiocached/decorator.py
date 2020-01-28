@@ -37,7 +37,8 @@ def cached(ttl=UNLIMITED):
                     result = await func(*args, **kwargs)
                     func.__cache.futures[cache_key].set_result(result)
                 except Exception as e:
-                    func.__cache.futures[cache_key].cancel()
+                    fut = func.__cache.futures.pop(cache_key)
+                    fut.cancel()
                     raise e from None
                 func.__cache[cache_key] = result
             return result
